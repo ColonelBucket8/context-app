@@ -40,7 +40,7 @@ class Navbar extends React.Component {
     const { language } = this.props.languageContext;
     const { search, flag } = content[language];
     return (
-      <div claaName={classes.root}>
+      <div className={classes.root}>
         <AppBar position="static" color={isDarkMode ? "default" : "primary"}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit">
