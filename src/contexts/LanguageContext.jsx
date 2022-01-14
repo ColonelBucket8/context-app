@@ -12,6 +12,7 @@ export function LanguageProvider(props) {
   );
 }
 
+// Higher order component
 // export const withLanguageContext = (Component) => (props) =>
 //   (
 //     <LanguageContext.Consumer>
