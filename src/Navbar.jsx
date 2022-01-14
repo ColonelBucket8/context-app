@@ -17,7 +17,7 @@ import styles from "./styles/NavbarStyles";
 class Navbar extends React.Component {
   static contextType = ThemeContext;
   render() {
-    const { isDarkMode } = this.context;
+    const { isDarkMode, toggleTheme } = this.context;
     const { classes } = this.props;
     return (
       <div claaName={classes.root}>
@@ -29,7 +29,7 @@ class Navbar extends React.Component {
             <Typography className={classes.title} variant="h6" color="inherit">
               App Title
             </Typography>
-            <Switch />
+            <Switch onChange={toggleTheme} />
             <div className={classes.grow} />
             <div className={classes.search}>
               <div className={classes.searchIcon}>
